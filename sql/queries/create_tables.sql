@@ -22,3 +22,9 @@ CREATE TABLE IF NOT EXISTS order_items (
     price REAL,
     freight_value REAL
 );
+
+CREATE TABLE IF NOT EXISTS order_reviews (
+    order_id TEXT PRIMARY KEY,
+    customer_city TEXT,
+    customer_state TEXT
+);
